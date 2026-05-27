@@ -5488,3 +5488,174 @@ html, body {
 
 
 
+
+
+/* Base Style for Floating Icons */
+.cine-floating-icon {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 5; /* Taaki ye video ke upar dikhein aur text ke niche/sath rahein */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Left Side Positions */
+.icon-top-left { width: 65px; height: 65px; top: 15%; left: 8%; }
+.icon-mid-left { width: 71px; height: 70px; top: 45%; left: 2%; }
+.icon-bottom-left { width: 60px; height: 60px; bottom: 15%; left: 6%; }
+.icon-bottom1 { width: 60px; height: 60px; bottom: 6%; left: 20%; }
+.icon-bottom3 { width: 60px; height: 60px; bottom: 90%; left: 75%; }
+.icon-bottom7 { width: 71px; height: 70px; top: 61%; left: 61%; }
+.icon-bottom8 { width: 71px; height: 70px; top: 65%; left: 29%; }
+/* Right Side Positions */
+.icon-button { width: 70px; height: 69px; top: 25%; right: 28%; }
+.icon-top-right { width: 55px; height: 55px; top: 18%; right: 10%; }
+.icon-mid-right { width: 75px; height: 75px; top: 40%; right: 3%; }
+.icon-bottom-right { width: 60px; height:60px; bottom: 88%; right: 2%; }
+.icon-bottom-right1 { width: 70px; height: 75px; bottom: 87%; left :20%; }
+.icon-bottom{ width: 84px; height: 78px; bottom: 12%; right: 7%; }
+.icon-bottom2{ width: 67px; height: 72px; bottom: 2%;left:73%; }
+.icon-bottom12{ width: 80px; height: 85px; top: 20%;left:25%; }
+/* Mobile Compatibility: Choti screens par icons text se na takrayein */
+@media (max-width: 768px) {
+  .cine-floating-icon {
+    display: none;
+  }
+}
+
+
+/* =================================================== */
+/* MOBILE RESPONSIVE MEDIA QUERY (For Screens <= 768px) */
+/* =================================================== */
+@media (max-width: 768px) {
+  
+  /* Icons ki size ko badha diya hai */
+  .cine-floating-icon {
+    display: block !important; 
+    width: 40px !important;    /* Size increased from 30px to 40px */
+    height: 40px !important;   /* Size increased from 30px to 40px */
+    padding: 3px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  /* ------------------------------------------------- */
+  /* LEFT SIDE & INNER LEFT ICONS POSITIONING          */
+  /* ------------------------------------------------- */
+  
+  /* Filmora (Top Left Corner) */
+  .icon-top-left {
+    top: 2% !important;
+    left: 3% !important;
+  }
+
+  /* Chatbot (Upper Mid Left) */
+  .icon-mid-left {
+    top: 22% !important;
+    left: 1% !important;
+  }
+
+  /* Jasper AI (Center Left) */
+  .icon-bottom-left {
+    top: 45% !important;
+    left: 2% !important;
+  }
+
+  /* Gemini (Lower Mid Left) */
+  .icon-bottom1 {
+    bottom: 32% !important;
+    left: 1% !important;
+  }
+
+  /* Replit (Bottom Left Corner) */
+  .icon-bottom3 {
+    bottom: 14% !important;
+    left: 3% !important;
+  }
+
+  /* InVideo AI (Heading ke paas thoda left-center) */
+  .icon-bottom7 {
+    top: 13% !important;
+    left: 22% !important;
+  }
+
+  /* Paradox AI (Lower Bottom near center-left) */
+  .icon-bottom8 {
+    top: 77% !important;
+    left: 41% !important;
+  }
+
+  /* ------------------------------------------------- */
+  /* RIGHT SIDE & INNER RIGHT ICONS POSITIONING         */
+  /* ------------------------------------------------- */
+
+  /* ChatGPT (Top Right Corner) */
+  .icon-top-right {
+    top: 2% !important;
+    right: 3% !important;
+  }
+
+  /* Claude AI (Upper Mid Right) */
+  .icon-mid-right {
+    top: 22% !important;
+    right: 1% !important;
+  }
+
+  /* Cursor AI (Center Right) */
+  .icon-bottom-right {
+    top: 45% !important;
+    right: 2% !important;
+  }
+
+  /* AI Generated Image (Lower Mid Right) */
+  .icon-bottom-right1 {
+    bottom: 32% !important;
+    right: 1% !important;
+  }
+
+  /* GitHub (Bottom Right Corner) */
+  .icon-bottom {
+    bottom: 14% !important;
+    right: 3% !important;
+  }
+
+  /* Midjourney (Heading ke paas thoda right-center) */
+  .icon-bottom2 {
+    top: 13% !important;
+    right: 22% !important;
+  }
+
+  /* Perplexity AI (Slightly lower inner right) */
+  .icon-button {
+    bottom: 24% !important;
+    right: 15% !important;
+  }
+
+  /* GIMP (Lower Bottom near center-right) */
+  .icon-bottom12 {
+    bottom: 3% !important;
+    right: 24% !important;
+  }
+
+}
+
+/* =================================================== */
+/* EXTRA SMALL PHONES OPTIMIZATION (For Screens <= 420px) */
+/* =================================================== */
+@media (max-width: 420px) {
+  /* Bohot chhote phones par scale perfectly balance rakhne ke liye */
+  .cine-floating-icon {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
