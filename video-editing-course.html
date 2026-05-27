@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from up2client.com/envato/ciri-ai/html/main/MultiPage-CiriAI/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2026 10:27:20 GMT -->
 <head>
    <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -273,7 +272,7 @@ With expert trainers, updated modules, and hands-on assignments, you can confide
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200, // Matches your screenshot's 1.2s duration
+    duration: 1200,
     easing: 'ease-in-out',
     once: true
   });
@@ -478,14 +477,11 @@ Who can join this Video Editing course?
 </section>
 
 <script>
-    // Saare faq items ko select karein
     const faqs = document.querySelectorAll('.faq-item');
 
     faqs.forEach((faq) => {
         faq.addEventListener('toggle', function() {
-            // Agar yeh item abhi khula hai
             if (this.open) {
-                // Baaki saare items ko band kar do
                 faqs.forEach((otherFaq) => {
                     if (otherFaq !== this) {
                         otherFaq.removeAttribute('open');
@@ -515,9 +511,7 @@ Who can join this Video Editing course?
  <footer class="position-relative footer-main">
     <img class="footer-logo" src="assets/images/home-page/footer-logo.png" alt="footer-logo">
     <div class="container">
-        <div class="row g-4"> <!-- g-4 se columns ke beech me equal spacing (gap) bani rahegi -->
-            
-            <!-- Column 1: About / Intro -->
+        <div class="row g-4"> 
             <div class="col-xxl-4 col-xl-4 col-lg-4 footer-col-fir position-relative">
                 <svg class="djks" xmlns="http://www.w3.org/2000/svg" width="2" height="100" viewBox="0 0 2 100" fill="none">
                     <path d="M1 0L0.999996 100" stroke="url(#paint0_linear_137_269)" stroke-width="2" />
@@ -680,26 +674,21 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    arrows: false,   // ✅ arrows disabled completely
-    dots: true       // ✅ dots for navigation
+    arrows: false,   
+    dots: true      
   });
 });
 </script>
  <script src="assets/javascript/slick.min.js"></script>
    <script src="assets/javascript/script.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    ```
-
-### 3. AOS ko Initialize karein
-Script link ke niche, aapko animation ko "active" karne ke liye ye chota sa code likhna hoga:
-
-```html
+    
 <script>
   AOS.init({
-    offset: 200,      // Animation kitni der se shuru hogi (pixels)
-    duration: 1000,   // Animation ki speed (1000 = 1 second)
+    offset: 200,     
+    duration: 1000, 
     easing: 'ease-in-out',
-    once: false,      // 'true' kiya toh sirf ek baar animation hogi, 'false' se har baar scroll par hogi
+    once: false,    
   });
 </script>
  

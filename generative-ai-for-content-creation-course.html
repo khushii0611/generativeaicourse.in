@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from up2client.com/envato/ciri-ai/html/main/MultiPage-CiriAI/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2026 10:27:20 GMT -->
 <head>
    <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -253,7 +252,7 @@ With expert trainers, updated modules, and hands-on assignments, you can confide
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200, // Matches your screenshot's 1.2s duration
+    duration: 1200,
     easing: 'ease-in-out',
     once: true
   });
@@ -513,14 +512,14 @@ Who can join the Gen AI for Content Creation course in Ahmedabad?
 </section>
 
 <script>
-    // Saare faq items ko select karein
+   
     const faqs = document.querySelectorAll('.faq-item');
 
     faqs.forEach((faq) => {
         faq.addEventListener('toggle', function() {
-            // Agar yeh item abhi khula hai
+          
             if (this.open) {
-                // Baaki saare items ko band kar do
+               
                 faqs.forEach((otherFaq) => {
                     if (otherFaq !== this) {
                         otherFaq.removeAttribute('open');
@@ -717,26 +716,21 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    arrows: false,   // ✅ arrows disabled completely
-    dots: true       // ✅ dots for navigation
+    arrows: false,   
+    dots: true       
   });
 });
 </script>
  <script src="assets/javascript/slick.min.js"></script>
    <script src="assets/javascript/script.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    ```
-
-### 3. AOS ko Initialize karein
-Script link ke niche, aapko animation ko "active" karne ke liye ye chota sa code likhna hoga:
-
-```html
+  
 <script>
   AOS.init({
-    offset: 200,      // Animation kitni der se shuru hogi (pixels)
-    duration: 1000,   // Animation ki speed (1000 = 1 second)
+    offset: 200,     
+    duration: 1000,  
     easing: 'ease-in-out',
-    once: false,      // 'true' kiya toh sirf ek baar animation hogi, 'false' se har baar scroll par hogi
+    once: false,     
   });
 </script>
  

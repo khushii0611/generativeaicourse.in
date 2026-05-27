@@ -909,26 +909,25 @@ body {
   color: #fff;
 }
 
-/* This media query ensures the code ONLY activates on laptops and larger screens */
 @media screen and (min-width: 1024px) {
   
   .course-grid {
-    display: grid !important; /* Forces grid layout on laptop */
-    grid-template-columns: repeat(3, 1fr) !important; /* Exactly 3 columns */
-    grid-template-rows: repeat(3, auto); /* Exactly 3 rows */
-    gap: 20px; /* Adjusts the spacing between your 3x3 cards */
+    display: grid !important;                  
+    grid-template-columns: repeat(3, 1fr) !important; 
+    grid-template-rows: repeat(3, auto); 
+    gap: 20px; 
     width: 100%;
   }
 
   .course-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Keeps all 'Learn More' buttons perfectly lined up */
-    height: 90%; /* Ensures all 9 cards are the exact same height */
+    justify-content: space-between; 
+    height: 90%; 
     box-sizing: border-box;
   }
 
-  /* Keeps your illustrations proportional inside the 3x3 grid */
+  
   .course-card img {
     max-width: 100%;
     height: auto;
@@ -951,7 +950,7 @@ body {
   transition: transform 0.6s ease;
 }
 
-/* Hover 3D effect */
+
 .course-card:hover {
   transform: rotateY(12deg) scale(1.05);
   box-shadow: 0 20px 40px rgba(0, 255, 177, 0.3);
@@ -961,7 +960,6 @@ body {
   transform: translateY(-10px);
 }
 
-/* Continuous floating animation */
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -999,7 +997,7 @@ body {
     font-size:25px;
 }
 .feature-card img {
-    width: 100px;            /* Icon thoda bada kar diya */
+    width: 100px;           
     height: auto;
   
   margin-bottom: 15px;
@@ -1019,19 +1017,19 @@ body {
 .btn-demo {
   display: inline-block;
   padding: 12px 30px;
-  background: #ff4d4d;       /* red background */
-  color: #fff;               /* white text */
+  background: #ff4d4d;       
+  color: #fff;            
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 30px;       /* rounded corners */
+  border-radius: 30px;      
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
 .btn-demo:hover {
-  background: #e60000;       /* darker red on hover */
-  transform: scale(1.05);    /* slight zoom */
+  background: #e60000;       
+  transform: scale(1.05);    
 }
 
 .section-four {
@@ -1150,29 +1148,29 @@ body {
 }
 .logos-slide {
     display: flex;
-    flex-direction: row; /* Ensure karein ki ye column na ho */
+    flex-direction: row; 
     align-items: center;
 }
 
 .marquee__content {
     display: flex;
     flex-direction: row;
-    gap: 40px; /* Text ke beech mein space ke liye */
-    white-space: nowrap; /* Text ko wrap hone se rokne ke liye */
+    gap: 40px; 
+    white-space: nowrap; 
 }
 /*-----------------------[ 11.Section Six CSS ]------------------------*/
-/* Container jo video aur text ko hold karega */
+
 .video-banner {
   position: relative;
   width: 100%;
-  height: 550px; /* Full screen height ke liye */
-  overflow: hidden; /* Zoom hone par video bahar na dikhe */
+  height: 550px; 
+  overflow: hidden; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Video ki styling aur Animation */
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -1180,30 +1178,30 @@ body {
   width: 100%;
   height: auto;
   object-position: center;
-  object-fit: cover; /* Video ko stretch hone se bachata hai */
+  object-fit: cover; 
   z-index: -1;
   opacity: 0.4;
-  /* Animation properties */
+  
   animation: slowVideoZoom 12s infinite alternate ease-in-out;
 }
 
-/* Zoom Animation Keyframes */
+
 @keyframes slowVideoZoom {
   0% {
-    transform: scale(1); /* Normal size */
+    transform: scale(1); 
   }
   100% {
-    transform: scale(1.15); /* 15% zoom-in */
+    transform: scale(1.15); 
   }
 }
 
-/* Text Overlay Styling */
+
 .video-overlay {
   text-align: center;
   color: white;
   z-index: 1;
   
-  background: rgba(0, 0, 0, 0.2); /* Text ke peeche halka shadow taaki readable ho */
+  background: rgba(0, 0, 0, 0.2); 
   padding: 20px;
   border-radius: 10px;
 }
@@ -1218,10 +1216,10 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
 }
-/* Container for features */
+
 .features-container {
     display: grid;
-  /* Desktop par 3 columns honge */
+  
   grid-template-columns: repeat(3, 1fr);
  
   gap: 20px;
@@ -1230,9 +1228,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* Individual Feature Card */
+
 .feature-card {
-  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.1); 
   backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 15px;
@@ -1241,19 +1239,19 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   
-  /* Smooth animation transition */
+  
   transition: all 0.3s ease-in-out;
 }
 
-/* HILNE VALA (Hover) EFFECT */
+
 .feature-card:hover {
-  transform: translateY(-10px) scale(1.05); /* Card upar jayega aur thoda bada hoga */
+  transform: translateY(-10px) scale(1.05); 
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  border-color: #00d2ff; /* Border color change hoga */
+  border-color: #00d2ff; 
 }
 
-/* Icons and Text styling */
+
 .feature-card .icon {
   font-size: 40px;
   margin-bottom: 10px;
@@ -1391,7 +1389,7 @@ body {
     margin-bottom: 30px;
 }
 .excellent img {
-    width: 50px;  /* Screenshot wale size ke hisaab se */
+    width: 50px;  
     height: 50px;
     margin-bottom: 15px;
     object-fit: contain;
@@ -1437,7 +1435,7 @@ body {
 
 .genai-banner {
   position: relative;
-  height: 500px; /* adjust height as needed */
+  height: 500px; 
   background: url('assets/images/genai-robot-data.png') no-repeat center center/cover;
   overflow: hidden;
 }
@@ -1854,7 +1852,7 @@ body {
 }
 
 .logo-section h2 {
-  color: #003366; /* Dark blue color from image */
+  color: #003366; 
   font-size: 28px;
   margin-bottom: 15px;
 }
@@ -1867,10 +1865,9 @@ body {
   line-height: 1.5;
 }
 
-/* The Grid System */
+
 .logo-grid {
   display: grid;
-  /* Creates 6 equal columns */
   grid-template-columns: repeat(6, 1fr); 
   gap: 10px;
   max-width: 900px;
@@ -1878,7 +1875,6 @@ body {
   border-radius: 10px;
 }
 
-/* Individual Logo Cards */
 .logo-card {
   border: 1px solid #fcf6f6;
   border-radius: 8px;
@@ -1887,13 +1883,13 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100px; /* Fixed height for uniformity */
+  height: 100px; 
 }
 
 .logo-card img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Keeps logo proportions */
+  object-fit: contain; 
 }
 
 .logo-card:hover {
@@ -1901,13 +1897,13 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 992px) {
-  .logo-grid { grid-template-columns: repeat(4, 1fr); } /* 4 columns on tablets */
+  .logo-grid { grid-template-columns: repeat(4, 1fr); } 
 }
 
 @media (max-width: 600px) {
-  .logo-grid { grid-template-columns: repeat(2, 1fr); } /* 2 columns on phones */
+  .logo-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 .settitle{
@@ -1917,14 +1913,14 @@ body {
 }
 .set{
     color:rgb(248, 248, 245);
-  justify-content: center; /* horizontally center */
+  justify-content: center; 
   
     align-items: center;
 }
 .text1{
     color:#d0d0d0;
     font-size: 12px;
-    justify-content: center; /* horizontally center */
+    justify-content: center; 
   
     align-items: center;
 }
@@ -2062,11 +2058,7 @@ body {
     animation: mover 2s infinite alternate;
 }
 
-
-
-
-
-
+/*---------------------------------------------------------------*/
 
 .site-footer {
     background-color: #1a1a1a;
@@ -2082,7 +2074,7 @@ body {
 }
 
 .footer-heading {
-    color: #f1c40f; /* Highlighting the heading */
+    color: #f1c40f; 
    
     font-size: 18px;
     text-align: center;
@@ -2091,14 +2083,13 @@ body {
 .footer-links {
     font-size: 14px;
     color: #f2eded;
- align-items: center; /* Horizontally center */
-  justify-content: center; /* Vertically center */
-  text-align: center; /* Text ko center karne ke liye */
+ align-items: center; 
+  justify-content: center; 
+  text-align: center; 
   flex-direction: column;
-  margin-bottom: 5px;   /* Bottom margin kam kiya */
-        /* Lines ke beech ka gap kam kiya */
-    max-width: 1500px;     /* Text ko thoda narrow karne ke liye */
-    margin-left: auto;    /* Center alignment barkarar rakhne ke liye */
+  margin-bottom: 5px;   
+    max-width: 1500px;
+    margin-left: auto;    
     margin-right: auto;
   
 }
@@ -2129,10 +2120,10 @@ body {
    flex-direction:column;
    margin-top: 0%;
     text-transform: uppercase;
-    margin-bottom: 5px;   /* Bottom margin kam kiya */
-    line-height: 1.7;     /* Lines ke beech ka gap kam kiya */
-    max-width: 1500px;     /* Text ko thoda narrow karne ke liye */
-    margin-left: auto;    /* Center alignment barkarar rakhne ke liye */
+    margin-bottom: 5px;   
+    line-height: 1.7; 
+    max-width: 1500px;     
+    margin-left: auto;    
     margin-right: auto;
 }
 
@@ -2204,8 +2195,8 @@ body {
 /*-----------------------[ 17.Section Blog CSS ]------------------------*/
 .blog-btn-container {
   display: flex;
-  justify-content: center; /* horizontally center */
-  align-items: center;     /* vertically center (if parent has height) */
+  justify-content: center; 
+  align-items: center;    
   margin: 40px 0;
 }
 .blog-btn {
@@ -2301,34 +2292,34 @@ body {
 /*-----------------------[ 18.Footer CSS ]------------------------*/
 /* Footer Main Layout */
 .footer-main {
-    background-color: #0b0b0c; /* Agar pehle se set na ho toh dark theme ke liye */
+    background-color: #0b0b0c; 
     padding: 80px 0 30px 0;
     overflow: hidden;
 }
 
-/* Row wrapper me flexbox properties secure karna */
+
 .footer-main .row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-/* Teeno Columns ki Common Styling aur Equal Spacing */
+
 .footer-col-fir, 
 .footer-col-sec {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    margin-bottom: 30px; /* Mobile devices par columns ke beech spacing ke liye */
+    margin-bottom: 30px; 
 }
 
-/* Content Blocks Spacing */
+
 .box-footer {
     padding-left: 15px;
 }
 
-/* Headings (Core & Advanced Modules) */
+
 .resour {
     color: #ffffff;
     font-size: 18px;
@@ -2338,7 +2329,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Links List */
 .foot-links {
     list-style: none;
     padding-left: 0;
@@ -2355,22 +2345,22 @@ body {
     font-size: 14px;
     transition: color 0.3s ease;
     display: inline-block;
-    text-transform: uppercase; /* Aapke content ke design ke mutabik */
+    text-transform: uppercase; 
 }
 
-/* Hover Effect */
+
 .foot-links li a:hover {
-    color: #00FFB1; /* Jo aapke SVG ka accent color hai */
+    color: #00FFB1; 
 }
 
-/* Left Sidebar SVG Line positioning */
+
 .footer-col-fir .djks {
     position: absolute;
     left: -15px;
     top: 0;
 }
 
-/* Responsive Fixes (For Mobile and Tablets) */
+
 @media (max-width: 991px) {
     .footer-col-fir, 
     .footer-col-sec {
@@ -2381,7 +2371,7 @@ body {
     }
     
     .footer-col-fir .djks {
-        display: none; /* Mobile par vertical line chip jati hai isliye hide kiya */
+        display: none; 
     }
     
     .box-footer {
@@ -2475,7 +2465,7 @@ body {
 }
 .footer-col-fir,
 .footer-col-sec {
-   padding-top: 0 !important; /* Forces the content to stay at the very top */
+   padding-top: 0 !important;
     padding-bottom: 60px;
     padding-left: 12px;
     padding-right: 12px;
@@ -2513,7 +2503,7 @@ body {
     justify-content: center;
     position: relative;
     display: flex;
-    align-items: flex-start; /* Forces children to align to the top */
+    align-items: flex-start;
     padding-top: 4px;
    
 }
@@ -2579,23 +2569,23 @@ body {
     max-width: 320px;
 }
 .feature-desc {
-    color: rgba(255, 255, 255, 0.7); /* whitish grey */
-    font-size: 15px; /* smaller text */
-    font-weight: 400;
-     max-width: 300px;   /* controls width */
-    height: 300px;    
-    line-height: 29px;   /* fixed height for all */
-    margin-top: 20px; /* Creates space between heading and description only */
+    color: rgba(255, 255, 255, 0.7);                        
+    font-size: 15px;                      
+    font-weight: 400;                         
+     max-width: 300px;  
+    height: 300px;       
+    line-height: 29px;   
+    margin-top: 20px; 
     padding-top: 0;
     position: relative;
 }
 .sec-heding.advice {
-    margin-top: 0;      /* Removes top gap from the heading */
+    margin-top: 0;     
     padding-top: 0;
-    line-height: 1.2;   /* Matches the right side for perfect alignment */
+    line-height: 1.2;   
      padding-left: 30px;
 }
-/* Ensure the container doesn't have internal padding pushing content down */
+
 .footer-col-fir, .col-left-side {
     padding-top: 0 !important;
     margin-top: 0 !important;
@@ -2604,7 +2594,7 @@ body {
 
 
 
-/* Make sure the box on the right also has zero margin to stay level */
+
 .resour {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -2619,7 +2609,7 @@ body {
   white-space: nowrap;
 }
 .inforow{
-    padding-top: 100px !important; /* Ensure both have the same top padding */
+    padding-top: 100px !important;
     padding-bottom: 85px;
     padding-left: 12px;
     padding-right: 12px;
@@ -2632,16 +2622,16 @@ body {
     display:block;
     align-items:flex-start;
     max-width: 300px; 
-    height: auto; /* Changed from 300px to auto so it grows with the text */
-    line-height: 1.5; /* Increased for better readability */
+    height: auto; 
+    line-height: 1.5; 
     margin-top: 15px;
 }
-/* Styling the Icons/Logos */
+
 .contact-row i {
     font-size: 20px;
     background: linear-gradient(90deg, #5C33FF 0%, #00FFB1 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes the icon have your gradient */
+    -webkit-text-fill-color: transparent; 
     width: 25px;
     text-align: center;
 }
@@ -2816,12 +2806,12 @@ button.bottom-top-button {
     border-radius: 50%;
 }
 .slick-dots li button {
-  font-size: 0;          /* hide numbers */
+  font-size: 0;          
 }
 .slick-dots li button:before {
-  content: '';          /* show dot instead */
+  content: '';        
   font-size: 20px;
-  color: #fff;           /* dot color */
+  color: #fff;          
 }
 
 
@@ -3251,7 +3241,7 @@ textarea {
   text-align: center;
   color: #fff;
 
-    font-family: 'Arial', sans-serif; /* You can replace this with 'Poppins' or 'Roboto' */
+    font-family: 'Arial', sans-serif; 
     
 }
 .heading {
@@ -3301,7 +3291,7 @@ textarea {
     text-align:left;
 }
 .subtitle1{
-    color: #8f10e3; /* Red color matching the image label */
+    color: #8f10e3; 
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -3309,7 +3299,7 @@ textarea {
 }
 .main-title1{
     color: #00e0ff;
-  text-shadow: 0 0 20px #00e0ff, 0 0 40px #7d00ff; /* Dark blue color matching the image heading */
+  text-shadow: 0 0 20px #00e0ff, 0 0 40px #7d00ff; 
     font-size: 48px;
     font-weight: 800;
     margin: 0;
@@ -3322,7 +3312,7 @@ textarea {
 }
 .texting1 p{
    color: #ceeef3;
-  /* Grey text color */
+  
     font-size: 20px;
     line-height: 1.6;
     margin: 0;
@@ -3464,16 +3454,16 @@ textarea {
 /* --- MESSAGES (p) COMPLETE CSS --- */
 
 .robot-part p {
-    position: fixed;         /* Robot ke sath move nahi hoga, screen par lock rahega */
-    left: 10px;              /* Screen ke ekdum left side mein */
-    width: 450px;            /* Readable width */
-    opacity: 0;              /* Shuruat mein gayab */
-    transform: translateX(-150px); /* Screen ke bahar se start hoga */
+    position: fixed;         
+    left: 10px;              
+    width: 450px;
+    opacity: 0;      
+    transform: translateX(-150px); 
     
     /* Look & Feel */
-    background: rgba(255, 255, 255, 0.1); /* Transparent glass look */
-    backdrop-filter: blur(10px);          /* Blur effect */
-    border-left: 5px solid #00d4ff;      /* Glowy blue line */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #00d4ff;
     padding: 15px 20px;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -3483,10 +3473,10 @@ textarea {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 1000;
-    pointer-events: none;    /* Mouse interaction block (optional) */
+    pointer-events: none;    
 }
 
-/* 1. Vertical Stacking (Ek ke niche ek list banegi) */
+/* 1. Vertical Stacking */
 #chest p     { top: 120px; margin-left:-600px;}
 #head p      { top: 100px; margin-left:-600px; }
 #left-arm p  { top: 120px; margin-left:-600px;}
@@ -3497,12 +3487,12 @@ textarea {
 /* 2. Show Messages when Animation Starts (Sequential Delays) */
 .start-assembly .robot-part p {
     opacity: 1;
-    transform: translateX(0); /* Apni jagah par slide hoke aayega */
+    transform: translateX(0); 
 }
 #right-arm p, #left-leg p {
-    transform: scaleX(-1) translateX(0); /* Parent ke mirror ko cancel karne ke liye */
+    transform: scaleX(-1) translateX(0); 
 }
-/* Har part ke liye specific delay taaki part join hone ke baad msg aaye */
+
 .start-assembly #chest p { 
      transition-delay: 0.8s;
 }
@@ -3531,17 +3521,17 @@ textarea {
     top: 170px; 
     left: 80px;
     width: 550px;
-    display: none; /* JS isse block karega */
+    display: none;
     opacity: 0;
-    z-index: 9999; /* Taaki ye sabse upar dikhe */
+    z-index: 9999; 
     transition: opacity 0.3s ease-in;
      color: #e8fafc;
-  /* Dark blue color matching the image heading */
+  
     font-size:small;
     font-weight: 600;
     margin: 0;
     text-align:left;
-    /* Look & Feel */
+    
     background: linear-gradient(90deg, #000000 0%, #010102 100%);
     
     border-left: 4px solid #00d4ff;
@@ -3550,7 +3540,7 @@ textarea {
     border-radius: 8px;
 }
 
-/* Ye class JS add karegi */
+
 #final-para.visible {
     display: block !important;
     opacity: 1 !important;
@@ -3558,28 +3548,28 @@ textarea {
 
 
 .video-container {
-    position: relative; /* Sabse zaroori */
+    position: relative; 
     width: 100%;
     overflow: hidden;
-    border-radius: 20px; /* Optional: Agar aapko rounded corners chahiye */
+    border-radius: 20px;
 }
 
 .home-sec-two-video2 {
     width: 100%;
-    display: block; /* Gap hatane ke liye */
+    display: block; 
     position: relative;
     z-index: 1; 
 }
 
 .video-overlay-content {
-    position: absolute; /* Video ke upar laane ke liye */
+    position: absolute;
     top: 200PX;
     left: 0;
     width: 100%;
     height: 70%;
-    z-index: 10; /* Video se upar dikhne ke liye */
+    z-index: 10; 
     
-    /* Text ko center mein laane ke liye flex */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3588,7 +3578,7 @@ textarea {
 .text-overlay {
     font-weight:bolder;
     max-height: 100%;
-    max-width: 80%; /* Text ko bahut wide hone se rokne ke liye */
+    max-width: 80%; 
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 71px;
@@ -3610,28 +3600,26 @@ textarea {
     margin: 0 auto;
 }
 
-/* Glass Card Styling */
+
 .glass-card {
     flex: 1;
     padding: 40px;
     color: white;
     font-weight: bold;
-    /* GLASS EFFECT */
-    /* Transparent background */
-    backdrop-filter: blur(15px);           /* Glass ki dhundhlahat */
+    backdrop-filter: blur(15px);           
     -webkit-backdrop-filter: blur(15px);
     
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Crystal edge */
+    border: 1px solid rgba(255, 255, 255, 0.1); 
     border-radius: 24px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .glass-card h2 {
-    color: #00d4ff; /* Glowy Blue for headings */
+    color: #00d4ff;
     margin-bottom: 20px;
 }
 
-/* Video Styling */
+
 .video-side {
     flex: 1;
 }
@@ -3639,7 +3627,7 @@ textarea {
 .side-video {
     width: 100%;
     border-radius: 24px;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2); /* Video ke side me light glow */
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2); 
 }
 
 /* Mobile Responsive */
@@ -3650,7 +3638,7 @@ textarea {
     }
 }
 .glass-card {
-    font-family: 'Poppins', sans-serif; /* Clean and modern */
+    font-family: 'Poppins', sans-serif; 
 }
 .hero-buttons{
     display: flex;
@@ -3958,38 +3946,36 @@ html, body {
 /* Main wrapper container */
 .contactphotos-main {
     position: relative;
-    width: 80px;                  /* Icon container ki size */
+    width: 80px;                 
     height: 80px;
-    margin: 0 auto 20px auto;     /* Card ko center karne aur niche gap dene ke liye */
+    margin: 0 auto 20px auto;    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Icon box jisme image hai */
+
 .contactphotos {
     position: relative;
-    z-index: 2;                   /* Image ko background circle ke upar rakhne ke liye */
+    z-index: 2;                  
     width: 80px;
     height: 80px;
-/* Purple background color */
-    border-radius: 50%;           /* Perfect circle background */
+
+    border-radius: 50%;          
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(81, 45, 168, 0.2);
 }
 
-/* Inside Icon Image Styling */
 .contactphotos img {
-    width: 70px;                  /* Icon image ki size control karne ke liye */
+    width: 70px;                 
     height: auto;
     object-fit: contain;
-    /* Agar dark theme background par black icon hai aur use white karna hai, to filters use kar sakte hain: */
-    /* filter: invert(1) brightness(100); */
+    
 }
 
-/* Background decorative circle (Agar aapko double circle effect chahiye) */
+
 .img-bg-circle {
     position: absolute;
     top: 50%;
@@ -3997,47 +3983,45 @@ html, body {
     transform: translate(-50%, -50%);
     width: 65px;
     height: 65px;
-    /* Halka purple shadow tint */
     border-radius: 50%;
     z-index: 1;
 }
 
-/* Card Heading ("Email Us") */
 .gendseratio {
     font-size: 30px;
-    color: #ffffff;               /* Dark theme ke hisab se white text (Change if needed) */
+    color: #ffffff;               
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-/* Email Link Styling */
+
 .numb-con {
     display: block;
     text-align: center;
-    color: #e0d4ff;               /* Soft purple-white link text */
+    color: #e0d4ff;               
     text-decoration: none;
     font-size: 20px;
     transition: all 0.3s ease;
 }
 
-/* Email Link Hover Effect */
+
 .numb-con:hover {
-    color: #ffffff;               /* Hover karne par bright white text */
-    text-decoration: underline;    /* Underline style */
+    color: #ffffff;              
+    text-decoration: underline;   
 }
 
 
 .breadcrumb {
   font-size: 0.9rem;
   color: #888;
-  /* Add these lines to fix positioning and clicking */
+  
   display: flex; 
-  justify-content: center; /* image_e273b0.jpg mein breadcrumb left side par hai */
+  justify-content: center; 
   align-items: center;
   position: relative; 
-  z-index: 10; /* Isse link background ke peeche nahi dabega */
-  pointer-events: auto; /* Isse click enable hota hai */
+  z-index: 10; 
+  pointer-events: auto; 
 }
 
 .breadcrumb a {
@@ -4045,7 +4029,7 @@ html, body {
   color: #6c5ce7;
   font-weight: 600;
   transition: 0.3s;
-  cursor: pointer; /* Forcefully hand icon dikhane ke liye */
+  cursor: pointer; 
   position: relative;
   z-index: 11;
 }
@@ -4061,7 +4045,7 @@ html, body {
     display: block;
     margin: 0 auto;
 }
-/* Sidebar Styling from image_e10354.jpg */
+
 .course-item12{
      border-radius: 54px;
      padding:19px 16px;
@@ -4117,7 +4101,7 @@ html, body {
     padding-left: 8px;
 }
 
-/* Benefit List Styling */
+
 .benefit-list {
     list-style: none;
     padding: 0;
@@ -4130,11 +4114,11 @@ html, body {
     font-weight: bold;
 }
 [data-aos] {
-  pointer-events: none; /* Jab tak animation na ho, click block rahega */
+  pointer-events: none; 
 }
 
 [data-aos].aos-animate {
-  pointer-events: auto; /* Appearance ke baad links clickable ho jayenge */
+  pointer-events: auto;
   transition-property: transform, opacity;
   
 }
@@ -4158,7 +4142,7 @@ html, body {
     margin-top: 20px;
 }
 /*----------------sectiontwio--------------*/
-/* Main Section Styles */
+
 .sectwodata {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 50px 20px;
@@ -4175,19 +4159,19 @@ html, body {
     line-height: 1.4;
 }
 
-/* Flexbox Container to align cards side by side */
+
 .sectwo {
     display: flex;
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap; /* Screen choti hone par cards niche aa jayenge */
+    flex-wrap: wrap; 
 }
 
-/* Standard Card Styling (Left & Right Cards) */
+
 .sectwo-cards {
     flex: 1;
     min-width: 340px;
-    background-color: #f3f0ff; /* Light purple-gray background tint */
+    background-color: #f3f0ff; 
     border-radius: 12px;
     padding: 30px 20px;
     display: flex;
@@ -4215,12 +4199,12 @@ html, body {
     margin-bottom: 25px;
 }
 
-/* Inner Box Container inside cards */
+
 .innersecttwobox {
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.6); 
     border-radius: 10px;
     padding: 15px;
-     /* Pure height match karne ke liye */
+   
 }
 
 .inner-title {
@@ -4230,12 +4214,12 @@ html, body {
     margin-bottom: 15px;
 }
 
-/* --- Highlighted Card Styling (Center Card) --- */
+
 .sectwo-highlighted {
-    background-color: #512da8; /* Dark purple background */
+    background-color: #512da8;
     box-shadow: 0 10px 20px rgba(81, 45, 168, 0.2);
-    width: 340px;               /* Same width standard card jitni */
-    aspect-ratio: 1 / 1;        /* Perfect Square */
+    width: 340px;              
+    aspect-ratio: 1 / 1;        
     box-sizing: border-box;  
     border-radius: 12px;
     padding: 30px 20px;
@@ -4258,14 +4242,14 @@ html, body {
 }
 
 .sectwo-highlighted .innersecttwobox {
-    background-color: rgba(255, 255, 255, 0.1); /* Dark contrast box */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sectwo-highlighted .inner-title{
     color: #ffffff;
 }
 
-/* --- Tick List & Icons Code --- */
+
 .sectwo-list {
     list-style: none;
     padding: 0;
@@ -4281,12 +4265,12 @@ html, body {
     line-height: 1.4;
 }
 
-/* Center card ke texts ko white karne ke liye */
+
 .sectwo-highlighted .sectwo-list li {
     color: #ffffff;
 }
 
-/* Pure CSS se custom Tick Mark (✓) design */
+
 .sectwo-list li::before {
     content: "✓";
     position: absolute;
@@ -4294,8 +4278,8 @@ html, body {
     top: -2px;
     width: 18px;
     height: 18px;
-    background-color: #512da8; /* Purple circle */
-    color: #ffffff;            /* White tick */
+    background-color: #512da8; 
+    color: #ffffff;         
     font-size: 11px;
     font-weight: bold;
     border-radius: 50px;
@@ -4304,13 +4288,13 @@ html, body {
     justify-content: center;
 }
 
-/* Center card ke ticks ko pure white block par purple tick dena */
+
 .sectwo-highlighted.sectwo-list li::before {
     background-color: #ffffff;
     color: #512da8;
 }
 /*-----------sectionthree-----*/
-/* Container styling */
+
 .faq-section {
     font-family: 'Segoe UI', sans-serif;
     padding: 60px 20px;
@@ -4330,10 +4314,10 @@ html, body {
 .faq-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Box ke beech ka space */
+    gap: 15px;
 }
 
-/* Base Accordion Item Box */
+
 .faq-item {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -4342,7 +4326,7 @@ html, body {
     transition: all 0.3s ease;
 }
 
-/* Default Arrow hide karne ke liye (Chrome/Safari/Firefox) */
+
 .faq-item summary::-webkit-details-marker {
     display: none;
 }
@@ -4350,7 +4334,7 @@ html, body {
     list-style: none;
 }
 
-/* Question Header Layout */
+
 .faq-question {
     padding: 18px 24px;
     font-size: 15px;
@@ -4368,7 +4352,7 @@ html, body {
     transition: transform 0.2s;
 }
 
-/* Answer Content Layout */
+
 .faq-answer {
     padding: 0 24px 18px 24px;
     font-size: 14px;
@@ -4380,30 +4364,29 @@ html, body {
 }
 
 /* ------------------------------------------------------------- */
-/* ACTIVE / OPEN STATE (Jab accordion khulega tab ye dynamic apply hoga) */
-/* ------------------------------------------------------------- */
 
-/* Jab <details> tag open ho (Purple theme) */
+
+
 .faq-item[open] {
-    background-color: #512da8; /* Blue-Purple Background */
+    background-color: #512da8; 
     border-color: #512da8;
 }
 
-/* Open hone par summary ka text color white */
+
 .faq-item[open] .faq-question {
     color: #ffffff;
 }
 
-/* Open hone par answer ka text color light white */
+
 .faq-item[open] .faq-answer {
     color: #e0d4ff;
 }
 
 /*--------------------last--------------*/
-/* Main CTA Background Banner */
+
 .cta-section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #512da8; /* Same purple background */
+    background-color: #512da8; 
     padding: 60px 20px;
     text-align: center;
     color: #ffffff;
@@ -4424,57 +4407,56 @@ html, body {
 
 .cta-subtitle {
     font-size: 14px;
-    color: #e0d4ff; /* Light purple-white shade text */
+    color: #e0d4ff; 
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 400;
 }
 
-/* Button Styling Area */
+
 .btn-area {
     display: flex;
     justify-content: center;
 }
 
-/* Main Pill-Shaped White Button */
+
 .header-btn1 {
     display: inline-flex;
     align-items: center;
     background-color: #ffffff;
-    color: #512da8; /* Text color matching background */
+    color: #512da8; 
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    padding: 8px 8px 8px 24px; /* Left me zyada space, right me icon ke liye kam */
-    border-radius: 50px;       /* Capsule look ke liye */
+    padding: 8px 8px 8px 24px; 
+    border-radius: 50px;       
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Arrow Icon Custom Circle Box */
+
 .header-btn1 .btn-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 36px;
     height: 36px;
-    background-color: #512da8; /* Icon circle background */
-    color: #ffffff;            /* White arrow */
-    border-radius: 50%;        /* Perfect circle for icon */
-    margin-left: 15px;         /* Text aur arrow ke beech ka gap */
+    background-color: #512da8; 
+    color: #ffffff;   
+    border-radius: 50%;        
+    margin-left: 15px;         
     font-size: 16px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Hover Effect: Mouse upar le jane par stylish transition */
 .header-btn1:hover {
-    transform: translateY(-3px); /* Button thoda upar uthega */
+    transform: translateY(-3px); 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .header-btn1:hover .btn-icon {
-    background-color: #3f1dcb; /* Hover karne par arrow circle thoda dark hoga */
+    background-color: #3f1dcb; 
 }
 .illustration-box{
    
@@ -4548,14 +4530,14 @@ html, body {
 }
 
 @media (max-width: 575px) {
-  /* 1. Container ki height dynamically manage karein */
+  
   #video-container {
     height: auto !important; 
-    min-height: 80vh; /* Puri mobile screen cover karega */
+    min-height: 80vh; 
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Content ko vertically center rakhega */
+    justify-content: center; 
     overflow: hidden;
   }
 
@@ -4565,25 +4547,25 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Video background ko fetch karke stretch karega */
+    object-fit: cover; 
     z-index: 1;
     transform: none;
   }
 
-  /* 2. Overlay ko absolute hi rakhein aur full stretch karein */
+  
   .video-overlay-content {
-    position: absolute; /* Absolute se video aur overlay dono same box mein rahenge */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Puri video screen ko cover karega */
+    height: 100%; 
     z-index: 2; 
     padding: 20px; 
     display: flex !important;
     flex-direction: column;
-    justify-content: center; /* Text aur buttons vertical center ho jayenge */
+    justify-content: center; 
     align-items: center;
-    background: rgba(0, 0, 0, 0.65); /* Thoda aur dark taki text clear dikhe */
+    background: rgba(0, 0, 0, 0.65); 
     box-sizing: border-box;
   }
 
@@ -4593,21 +4575,22 @@ html, body {
     text-align: center;
   }
   
-  /* 3. Text & Typography for Mobile */
+  
+
   .text-overlay p {
-    font-size: 15px !important; /* Thoda readable size */
+    font-size: 15px !important;
     color: #ffffff;
-    margin: -26px -114px 34px -100px  !important; /* Top 0, Bottom sirf 5px space */
+    margin: -26px -114px 34px -100px  !important; 
     line-height: 1.2;
     padding-top: 0PX;
   }
 
-  /* 4. Buttons layout */
+  
   .text-overlay .book-btn, 
   .text-overlay a.btn { 
     display: inline-block;
-    width: 190%; /* Mobile screen par perfect fit hoga */
-    max-width: 280px; /* Boht zyada wide hone se rokega */
+    width: 190%;
+        max-width: 280px; 
     margin: 9px -56PX;
     padding: 11px;
     box-sizing: border-box;
@@ -4615,51 +4598,50 @@ html, body {
   }
 }
 
-/* Mobile responsive settings (Max-width: 768px ya 575px aapki requirement ke hisab se) */
 @media (max-width: 768px) {
     .about-section {
         display: flex;
-        flex-direction: column; /* Row se Column me convert karne ke liye */
-        align-items: center;    /* Content ko center align karne ke liye */
-        padding: 40px 20px;     /* Mobile ke hisab se scaling padding */
+        flex-direction: column; 
+        align-items: center;    
+        padding: 40px 20px;  
     }
 
     .about-left {
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;    /* Content aur Heading ke beech space */
+        margin-bottom: 20px; 
     }
 
-    /* Agar heading rotated thi (writing-mode ya transform se), toh use normal karne ke liye */
+    
     .about-left h2 {
-        writing-mode: horizontal-tb; /* Text ko seedha karne ke liye */
-        transform: none;             /* Agar rotate kiya ho toh remove karne ke liye */
-        font-size: 28px;             /* Mobile font size */
+        writing-mode: horizontal-tb; 
+        transform: none;            
+        font-size: 28px;           
     }
 
     .about-content {
         width: 100%;
-        text-align: left;           /* Text reading normal left aligned */
+        text-align: left;           
         padding: 0 10px;
     }
 
     .about-content h3 {
-        font-size: 22px;             /* Heading size text adjust */
+        font-size: 22px;           
         margin-bottom: 15px;
     }
 
     .about-content p {
-        font-size: 16px;             /* Paragraph text size readability ke liye */
+        font-size: 16px;            
         line-height: 1.6;
         margin-bottom: 15px;
     }
 
-    /* Agar right section khali hai ya image ke liye hai toh mobile pe hide kar sakte hain */
+   
     .about-right {
         display: none; 
     }
 }
-/* Desktop view me final-para ko hamesha chhupa kar rakhein */
+
 
 
 /* ================= Mobile View Responsive CSS ================= */
@@ -4668,19 +4650,18 @@ html, body {
    ========================================================================== */
 @media screen and (max-width: 768px) {
     
-    /* 1. Main Container Adjustment */
     .robot-assembly-container {
-        width: 100% !important; /* Mobile par width 100% perfect fit karegi */
-        height: 500px;         /* Height thodi kam ki taaki layout balance rahe */
-        margin-top: 0;         /* Negative margin ko reset kiya */
+        width: 100% !important; 
+        height: 500px;   
+        margin-top: 0;
     }
 
     /* 2. Robot Parts and Images Scaling */
     .robot-part img {
-        width: 280px !important; /* Image size desktop se half kiya taaki screen me aaye */
+        width: 280px !important;
     }
 
-    /* 3. Initial (Dispersed) Positions Mobile ke liye */
+    /* 3. Initial  */
     #head { top: 5%; left: 5%; }
     #chest { top: 30%; left: 70%; transform: scale(1.2); }
     #left-arm { top: 70%; left: 5%; }
@@ -4688,10 +4669,10 @@ html, body {
     #left-leg { top: 75%; }
     #right-leg { top: 65%; }
 
-    /* 4. Final Assembly Positions (Mobile Screen Center ke mutabik) */
+    /* 4. Final Assembly Positions */
     .start-assembly #chest {
         top: 150px;
-        left: calc(50% - 140px); /* 280px width ka aadha 140px hota hai */
+        left: calc(50% - 140px); 
     }
 
     .start-assembly #head {
@@ -4707,7 +4688,7 @@ html, body {
     .start-assembly #right-arm {
         top: 170px;
         right: calc(50% + 183px);
-        margin-right: -280px; /* Reset according to image size */
+        margin-right: -280px;
     }
 
     .start-assembly #left-leg {
@@ -4718,30 +4699,30 @@ html, body {
     .start-assembly #right-leg {
         top: 225px;
         right: calc(50% - -130px);
-        margin-right: -280px; /* Reset according to image size */
+        margin-right: -280px; 
     }
 
     /* 5. Messages (p tags) Layout for Mobile */
-    /* Mobile me text side me nahi balki screen ke niche box ban kar dikhega */
+    
     .robot-part p {
         position: fixed !important;
-        bottom: 20px !important;    /* Screen ke ekdum niche lock ho jayega */
+        bottom: 20px !important;    
         top: auto !important;
         left: 5% !important;
         right: 5% !important;
-        width: 90% !important;       /* Poori screen width cover karega */
-        margin: 0 !important;        /* Desktop ke minus margins ko clear kiya */
-        font-size: 13px;             /* Mobile readibility ke liye best size */
+        width: 90% !important;       
+        margin: 0 !important; 
+        font-size: 13px;    
         padding: 10px 15px;
-        transform: translateY(100px) !important; /* Niche se upar slide hoga */
+        transform: translateY(100px) !important;
     }
     #right-arm p, #left-leg p {
         right: auto !important;
         left: 5% !important;
-        transform: translateY(100px) scaleX(-1) !important; /* Initial state me flipped + hidden */
+        transform: translateY(100px) scaleX(-1) !important; 
     }
 
-    /* Animation start hone par flip (scaleX) barkarar rahega aur text sidha dikhega */
+
     .start-assembly #right-arm p, 
     .start-assembly #left-leg p {
         opacity: 1 !important;
@@ -4750,10 +4731,9 @@ html, body {
 
    
 
-    /* Message animation trigger for mobile */
     .start-assembly .robot-part p {
         opacity: 1 !important;
-        transform: translateY(0) !important; /* Slide up into view */
+        transform: translateY(0) !important;
     }
 
     /* 6. Final Paragraph Block Adjustments */
@@ -4782,37 +4762,34 @@ html, body {
     
     .counter-row {
         display: flex;
-        flex-wrap: wrap;           /* Elements ko screen ke hisab se niche lane ke liye */
-        justify-content: center;   /* Center align karne ke liye */
-        gap: 20px;                 /* Boxes ke beech mein gap */
-        padding: 20px 10px;        /* Side padding kam ki */
+        flex-wrap: wrap;         
+        justify-content: center;   
+        gap: 20px;              
+        padding: 20px 10px;     
     }
 
     .counter-box {
-        /* Yahan humne 'calc(50% - 15px)' diya hai taaki mobile par ek row mein 
-           2 boxes side-by-side perfectly fit ho sakein.
-        */
+       
         flex: 0 0 calc(50% - 15px); 
-        min-width: 140px;          /* Bahut choti screen par layout kharab na ho */
+        min-width: 140px;          
         padding: 15px 10px;
         text-align: center;
-        box-sizing: border-box;    /* Padding ko width ke andar rakhne ke liye */
+        box-sizing: border-box;    
     }
 
-    /* Agar 3 boxes hain aur last wala akele niche line me aa raha hai, 
-       to use full width dekar center kar sakte hain (Optional but looks great) */
+    
     .counter-box:last-child {
-        flex: 0 0 100%;            /* Last counter (Years of Experience) full width lega */
-        max-width: 250px;          /* Par use zyada bada nahi hone denge */
+        flex: 0 0 100%;           
+        max-width: 250px; 
     }
 
-    /* Numbers (H3) ka size mobile ke liye */
+   
     .counter-box h3.counter {
         font-size: 28px !important; 
         margin-bottom: 5px;
     }
 
-    /* Labels (P) ka size mobile ke liye */
+    
     .counter-box p {
         font-size: 11px !important;
         letter-spacing: 1px;
@@ -4820,14 +4797,14 @@ html, body {
         margin: 0;
     }
 }
-/* Isse wo poora overlay content heading se niche khisak jayega */
+
 .video-overlay-content {
-    margin-top: 80px !important; /* Agar space aur chahiye toh 80px ko 100px ya 120px kar sakte hain */
+    margin-top: 80px !important; 
 }
 
-/* Ya phir agar aapne text-overlay ko absolute diya hai toh uski top position fix karein */
+
 .text-overlay {
-    top: 50% !important; /* Is value ko badha kar check karein agar text abhi bhi upar hai */
+    top: 50% !important; 
 }
 .dui1{
     color:var(--12,#f8f6f6);
@@ -4925,7 +4902,7 @@ html, body {
 .sec-heding.advice {
     margin-top: 0;
     padding-top: 0;
-    padding-left: 0; /* Default aligned */
+    padding-left: 0; 
     font-size: 36px;
     line-height: 1.2;
     font-weight: 700;
@@ -4997,7 +4974,7 @@ html, body {
     margin-bottom: 0;
 }
 
-/* FIXED: Iski width 130% se mobile layout break ho raha tha */
+
 .foot-links li {
     position: relative;
     width: 100%; 
@@ -5007,7 +4984,7 @@ html, body {
     margin-bottom: 8px;
 }
 
-/* List Glow Bullets */
+
 .foot-links li::before {
     content: '';
     position: absolute;
@@ -5083,7 +5060,7 @@ html, body {
     white-space: nowrap;
 }
 
-/* Demo Form styling */
+
 .form-container {
     margin-top: 25px;
     background: rgb(18, 17, 17);
@@ -5123,7 +5100,7 @@ html, body {
     cursor: pointer;
 }
 
-/* Background gradient images positioning */
+
 .footer-gefdo {
     position: absolute;
     bottom: 0;
@@ -5141,7 +5118,7 @@ html, body {
     position: relative;
     padding: 25px 0;
     background: #060607;
-    overflow: hidden; /* Multi-screen overflow overflow-x safe */
+    overflow: hidden; 
 }
 
 .das {
@@ -5232,7 +5209,7 @@ html, body {
         padding-left:10px ;
     }
 
-    /* Hide decorative animated lines on Mobile to secure space */
+   
     .footer-col-fir::after,
     .djks {
         display: none !important;
@@ -5248,7 +5225,7 @@ html, body {
         text-align: center;
     }
 
-    /* Hide absolute list circles on mobile for text alignment symmetry */
+    
     .foot-links li::before,
     .foot-links li::after {
         display: none;
@@ -5274,25 +5251,24 @@ html, body {
    Contact Info & Icons Alignments (Perfect Mobile Fix)
    ========================================================================== */
 
-/* Poore contact section ka inner container setup */
+
 .info-grid {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     margin-bottom: 25px;
-    text-align: left !important; /* Mobile par bhi text left se properly start hoga */
+    text-align: left !important; 
 }
 
-/* Contact row wrapper jisme icon aur text hain */
+
 .contact-row {
     display: flex;
-    align-items: flex-start; /* Icons ko text ke top line ke saath perfect align karega */
-    gap: 15px; /* Icon aur text ke beech ka barabar gap */
+    align-items: flex-start; 
+    gap: 15px;
     width: 100%;
 }
 
-/* FIXED: Phone number aur baki text jo bohot left ja rahe the */
 .contact-row span, 
 .contact-row address {
     color: #6F6F6F;
@@ -5305,20 +5281,20 @@ html, body {
 }
 
 .nowrap {
-    white-space: nowrap; /* Mobile screen par numbers split nahi honge */
+    white-space: nowrap; 
 }
 
-/* FIXED: Icon jo hide ho rahe the ya shrink ho rahe the */
+
 .contact-row i {
     font-size: 18px;
     background: linear-gradient(90deg, #5C33FF 0%, #00FFB1 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    -webkit-text-fill-color: transparent; 
     
-    /* Yeh properties ensure karengi ki icon squeeze/hide na ho */
+    
     width: 25px;
     text-align: center;
-    flex-shrink: 0; /* Mobile responsive compression se icon ko bachayega */
+    flex-shrink: 0; 
     display: inline-block;
 }
 
@@ -5326,19 +5302,19 @@ html, body {
    Mobile Responsive Adjustment (Media Query Updates)
    ========================================================================== */
 @media (max-width: 991px) {
-    /* Box container ke andar alignment secure karne ke liye */
+    
     .box-footer {
         padding: 25px 20px !important;
-        text-align: left !important; /* Center text pull karke standard left spacing dega */
+        text-align: left !important; 
     }
 
     .resour {
-        text-align: center; /* Title center me hi accha lagega */
+        text-align: center; 
         font-size: 20px;
         margin-bottom: 20px;
     }
 
-    /* Mobile view me address and phone rows alignment stable rakhne ke liye */
+    
     .info-grid {
         align-items: flex-start;
         padding-left: 20px;
@@ -5347,28 +5323,28 @@ html, body {
         justify-content: flex-start;
     }
 }
-/* Custom CSS Grid Jo Desktop par Hamesha 3 Columns hi Rakhega */
+
 .course-grid {
     display: grid !important;
-    /* Strict Rule: Minimum 1024px screen par exact 3 equal columns locks */
+    
     grid-template-columns: repeat(3, 1fr) !important; 
-    gap: 24px !important; /* Columns aur rows ke beech ka gap */
+    gap: 24px !important;
     width: 100% !important;
-    max-width: 1200px; /* Layout ko zyada phelne se rokega */
-    margin: 0 auto !important; /* Pure grid ko center rakhega */
+    max-width: 1200px; 
+    margin: 0 auto !important; 
 }
 
 /* iPad / Tablet View Fix */
 @media (max-width: 991px) {
     .course-grid {
-        grid-template-columns: repeat(2, 1fr) !important; /* Tablets par 2 columns */
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
-/* Mobile View Fix (iPad mini aur mobile) */
+
 @media (max-width: 653px) {
     .course-grid {
-        grid-template-columns: repeat(1, 1fr) !important; /* Mobile par 1 column */
+        grid-template-columns: repeat(1, 1fr) !important; 
         gap: 16px !important;
     }
     
@@ -5376,10 +5352,137 @@ html, body {
         width: 100% !important;
     }
 }
+/*================================================================*/
+/* Unique container using a custom namespace to avoid conflicts */
+.cine-course-wrapper {
+  position: relative;
+  width: 100%;
+  height: 117vh; /* Full screen viewport height */
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  bottom:52px;
+}
 
+/* Background looping asset configuration */
+.cine-course-media {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
 
+/* Unique dark shading protection layer */
+.dark-shading-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a 50% dark tint over the video */
+  z-index: 2;
+}
 
+/* Content block positioning */
+.cine-course-info {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #ffffff;
+  pointer-events: none; /* Allows user clicks to pass right through text elements */
+}
 
+/* Wide-tracked uppercase subtitle styling */
+.cine-course-tagline {
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #b3b3b3;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Prominent, bold block-level heading */
+.cine-course-heading {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Creates the muted, atmospheric transparency blend seen in the reference */
+.cine-course-muted-txt {
+  opacity: 0.35;
+}
+
+/* Responsive breakout parameters for mobile screens */
+@media (max-width: 768px) {
+  .cine-course-heading {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  .cine-course-tagline {
+    font-size: 11px;
+    letter-spacing: 6px;
+  }
+}
+/* Base style for the changing text with smooth fade transition class */
+.cine-course-muted-txt {
+  opacity: 0.35;
+  transition: opacity 0.4s ease-in-out;
+  display: inline-block;
+}
+
+/* JS toggles this class to create a smooth fade-out and fade-in effect */
+.text-fade-out {
+  opacity: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .cine-course-heading {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+  .cine-course-tagline {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+}
+
+.cine-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  letter-spacing: 1px;
+  
+  /* One-liner desktop layouts adjustments */
+  
+  overflow: hidden;
+  text-overflow: ellipsis; /* Agar space kam pade toh safe cutoff design */
+  max-width: 900px;
+}
+
+/* Responsive breakout parameters for smaller mobile screens */
+@media (max-width: 768px) {
+  .cine-description {
+    font-size: 13px;
+    white-space: normal; /* Mobile screens par text automatic line break le sake */
+    max-width: 90%;
+    line-height: 1.5;
+  }
+}
 
 
 

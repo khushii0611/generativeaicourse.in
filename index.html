@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
  <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -272,8 +270,55 @@
                
    </section>
    <!-- ====================================== Section Three ===================================== -->
-   
-   <!-- ====================================== Section Four ===================================== -->
+  <section>
+   <div class="section-title12">
+    <h2 style="padding-top:-20px;">AI FILM MAKING</h2>
+    <p class="cine-description">
+  Master text-to-video prompt engineering, cinematic lighting, and next-gen AI VFX pipelines.
+</p>
+</div>
+   <div class="cine-course-wrapper">
+  <video autoplay muted loop playsinline class="cine-course-media">
+    <source src="assets/video/210475_medium.mp4" type="video/mp4">
+  </video>
+
+  <div class="dark-shading-layer"></div>
+
+  <div class="cine-course-info">
+  <p class="cine-course-tagline">N E X T - G E N &nbsp; C I N E M A &nbsp; T R A I N I N G &nbsp; I N &nbsp; A H M E D A B A D</p>
+  <h1 class="cine-course-heading">GENERATIVE AI FOR
+   <span id="dynamic-changing-word" class="cine-course-muted-txt">FILMMAKERS</span>
+    </h1>
+</div>
+
+</div>
+
+   <script>
+  // Un words ki list jo aap screenshot ki tarah ek ke baad ek dikhana chahte hain
+  const wordsArray = ["FILMMAKERS", "CREATORS", "VFX ARTISTS", "EDITORS"];
+  let currentIndex = 0;
+
+  const targetWordSpan = document.getElementById("dynamic-changing-word");
+
+  function changeWordSequentially() {
+    // 1. Pehle current word ko smoothly fade-out karo
+    targetWordSpan.classList.add("text-fade-out");
+
+    // 2. Fade out hone ke baad (400ms), text badlo aur wapas fade-in karo
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % wordsArray.length;
+      targetWordSpan.textContent = wordsArray[currentIndex];
+      
+      // Fade out class hatao taaki naya word opacity: 0.35 par wapas aa jaye
+      targetWordSpan.classList.remove("text-fade-out");
+    }, 400); 
+  }
+
+  // Har 3000 milliseconds (3 seconds) me text badalata rahega
+  setInterval(changeWordSequentially, 3000);
+</script>
+</section>
+=============================== Section Four ===================================== -->
    <section class="section-four pt-0 position-relative">
       <img class="blue-gardient3" src="assets/images/home-page/blue-gardient3.png" alt="blue-gardient3">
       <img class="blue-gardient4" src="assets/images/home-page/blue-gardient4.png" alt="blue-gardient4">
@@ -769,7 +814,7 @@ and more. Stay ahead in your career with our up-to-date guidance!</p>
 <footer class="position-relative footer-main">
     <img class="footer-logo" src="assets/images/home-page/footer-logo.png" alt="footer-logo">
     <div class="container">
-        <div class="row g-4"> <!-- g-4 se columns ke beech me equal spacing (gap) bani rahegi -->
+        <div class="row g-4"> 
             
             <!-- Column 1: About / Intro -->
             <div class="col-xxl-4 col-xl-4 col-lg-4 footer-col-fir position-relative">
@@ -866,12 +911,7 @@ and more. Stay ahead in your career with our up-to-date guidance!</p>
 </footer>
 
 
-
-
-
-
-
-
+/* ======================================Footer End Section=====================================*/  
             
             <footer class="site-footer">
     <div class="footer-container">
@@ -943,8 +983,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    arrows: false,   // ✅ arrows disabled completely
-    dots: true       // ✅ dots for navigation
+    arrows: false,   
+    dots: true       
   });
 });
 </script>

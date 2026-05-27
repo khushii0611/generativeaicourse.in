@@ -1029,19 +1029,19 @@
 }
 @media (max-width: 991px) {
     section {
-        min-height: 450px; /* Mobile par section height */
+        min-height: 450px; 
     }
 
-    /* Images ka size thoda chhota karenge taaki screen se bahar na jayein */
+    
     .client-img1, .client-img2, .client-img3, .client-img4, .client-img5, .client-img6 {
-        position: absolute !important; /* Line se hata kar wapas absolute kiya */
+        position: absolute !important; 
         width: 45px !important;
         height: 45px !important;
         display: block !important;
-        border: 2px solid #00FFB1; /* Clean look ke liye accent border */
+        border: 2px solid #00FFB1;
     }
 
-    /* Mobile ke narrow screen (375px - 430px) ke hisaab se scattered positions */
+    
     .client-img1 {
         top: 5% !important;
         left: 8% !important;
@@ -1058,7 +1058,7 @@
         bottom: 5% !important;
         right: 5% !important;
     }
-    /* Baki 2 images ko beech me adjust kiya hai taaki text par overlap na ho */
+    
     .client-img5 {
         top: 40% !important;
         left: 2% !important;
@@ -1071,24 +1071,23 @@
 /*===================section six index==============*/
 @media (max-width: 991px) {
     .video-banner {
-        /* FIXED: height ko auto kiya taaki saare 6 cards expand ho sakein aur text cut na ho */
         height: auto !important; 
         top:-200px;
         min-height: 100vh;
-        overflow: visible !important; /* Content overflow lock hata diya */
+        overflow: visible !important; 
     }
 
     .bg-video {
-        height: 100%; /* Video automatically scales down along the content flow */
+        height: 100%; 
     }
 
     .video-overlay {
-        padding: 40px 15px; /* Mobile adaptive padding margins */
+        padding: 40px 15px; 
         height: auto !important;
     }
 
     .features-container {
-        /* FIXED: Columns ko 3 se hata kar 1 kiya taaki cards ek ke niche ek saaf dikhein */
+  
         grid-template-columns: 1fr !important; 
         gap: 20px;
         width: 100%;
@@ -1096,7 +1095,7 @@
 
     .feature-card {
         padding: 20px;
-        text-align: left; /* Mobile layout symmetrical orientation standard */
+        text-align: left; 
          text-align: center;       
     }
 
@@ -1106,15 +1105,15 @@
 }
 @media (min-width: 280px) and (max-width: 653px) {
     .video-banner {
-        /* FIXED: height ko auto kiya taaki saare 6 cards expand ho sakein aur text cut na ho */
+      
         height: auto !important; 
         top:-200px;
         min-height: 100vh;
-        overflow: visible !important; /* Content overflow lock hata diya */
+        overflow: visible !important;
     }
 
     .bg-video {
-        height: 100%; /* Video automatically scales down along the content flow */
+        height: 100%; 
     }
 
     .video-overlay {
@@ -1123,7 +1122,7 @@
     }
 
     .features-container {
-        /* FIXED: Columns ko 3 se hata kar 1 kiya taaki cards ek ke niche ek saaf dikhein */
+       
         grid-template-columns: 1fr !important; 
         gap: 20px;
         width: 100%;
@@ -1131,12 +1130,12 @@
 
     .feature-card {
         padding: 20px;
-        text-align: left; /* Mobile layout symmetrical orientation standard */
+        text-align: left; 
          text-align: center;       
     }
 
     .feature-card h3 {
-        font-size: 18px; /* Slightly compact titles for mobile screens */   
+        font-size: 18px;  
     }
 
     .feature-card p{
@@ -1149,7 +1148,6 @@
 /*--------------nine index-------------------*/
 /* Universal Mobile and Tablet Responsive Fix */
 @media (max-width: 991px) {
-    /* Kisi bhi wrapper ko screen se bahar jaane se rokne ke liye */
     .section-nine, .row-nine, .container {
         width: 100% !important;
         max-width: 100% !important;
@@ -1161,9 +1159,9 @@
         justify-content: center;
     }
 
-    /* Heading aur Paragraph mobile par chote aur center/proper align ho jayein */
+    
     .sec-heding.quest {
-        font-size: 28px !important; /* Mobile ke hisab se heading size */
+        font-size: 28px !important; 
         line-height: 1.3;
         margin-bottom: 15px;
     }
@@ -1171,14 +1169,14 @@
     .dui1.seci {
         font-size: 15px !important;
         line-height: 1.5;
-        margin-bottom: 30px; /* Accordion se thodi doori banane ke liye */
+        margin-bottom: 30px; 
     }
 
-    /* Accordion buttons ke andar ka text wrap ho kar niche aa jaye, kate nahi */
+    
     .accordion-button {
-        font-size: 14px !important; /* Mobile ke liye text size */
-        white-space: normal !important; /* Text line break allow karega */
-        word-break: break-word; /* Bada word ho toh toot ke niche aa jaye */
+        font-size: 14px !important;
+        white-space: normal !important;
+        word-break: break-word; 
         padding: 12px 15px !important;
     }
 
@@ -1187,43 +1185,43 @@
         line-height: 1.5;
     }
 }
-/* Mobile View Optimization (280px se 653px) */
+
 
 /*-----------------one===========*/
 @media (max-width: 768px) {
     .bestAI {
-        font-size: 26px !important; /* Mobile screen ke hisab se perfect heading size */
+        font-size: 26px !important; 
         line-height: 1.3;
-        word-wrap: break-word; /* Lambe words ko break karega taaki bahar na jaye */
+        word-wrap: break-word;
         margin-bottom: 12px;
     }
 
     .olut {
-        font-size: 14px !important; /* Mobile par thoda chota aur clean text */
+        font-size: 14px !important;             
         line-height: 1.5;
-        max-width: 100%; /* Mobile ki puri width cover karega balanced padding ke sath */
+        max-width: 100%; 
     }
 }
 /*--------------------------------footer------------*/
 @media (max-width: 576px) {
     .form-container {
-        padding: 20px 15px; /* Mobile par padding thodi kam taaki screen space bache */
+        padding: 20px 15px;
         width: 90%;
     }
 
     .form-container h2 {
-        font-size: 20px; /* Mobile par heading thodi choti */
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
     .form-container input, 
     .form-container .submit-btn {
-        font-size: 15px; /* Mobile keyboard input ke liye perfect size */
+        font-size: 15px;
         padding: 10px 12px;
     }
 }
 
-/* Sirf iPad Air (Around 820px) ke liye Footer Layout Optimization */
+
 @media (min-width: 280px) and (max-width:653px) {
     .footer-main {
         padding: 50px 0 !important;
@@ -1231,12 +1229,12 @@
         overflow: hidden;
     }
 
-    /* Row wrapping framework update */
+   
     .footer-main .row {
         display: flex !important;
         flex-direction: column !important;
-        flex-wrap: wrap !important; /* Items ko naturally content flow me wrap hone dega */
-        gap: 30px 20px !important; /* Row aur column spacing perfectly manage karne ke liye */
+        flex-wrap: wrap !important;
+        gap: 30px 20px !important;  
     }
 
     /* Column 1: About Section (50% Width) */
@@ -1251,7 +1249,7 @@
         max-width: 80% !important;
     }
 
-    /* Column 3: Information & Form Box (Neeche shift hokar Full 100% space lega) */
+    /* Column 3: Information & Form Box */
     .footer-main .footer-col-sec:nth-child(3) {
         flex: 0 0 100% !important;
         max-width: 100% !important;
@@ -1261,7 +1259,6 @@
     /* Inner Information & Form Alignment setup */
     .footer-main .footer-col-sec:nth-child(3) .box-footer {
         display: grid;
-         /* Contact Details Left me, Form Right me side-by-side */
         gap: 30px;
         align-items: start;
     }
@@ -1285,7 +1282,7 @@
     .footer-main .form-container {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 15px !important; /* Inner spaces minimal kiye */
+        padding: 15px !important; 
         margin-top: 20px !important;
         box-sizing: border-box !important;
     }
@@ -1311,8 +1308,8 @@
 
     /* Decorative vertical SVG line handling */
     .footer-main .djks {
-        display: none !important; /* Tablet screens par messy overlapping se bachane ke liye hide kiya */
-    }
+        display: none !important;
+       }
 
     /* Address Text layout inside grid */
     .contact-row span, .contact-row address span {
@@ -1350,18 +1347,18 @@
 
     .footer-main .form-container input {
         width: 100% !important;
-        margin-bottom: 0 !important; /* Grid gap handles it */
+        margin-bottom: 0 !important; 
         padding: 10px !important;
         font-size: 13px !important;
     }
 
     .footer-main .form-container button {
-        grid-column: span 2; /* Button pure form row ki bottom span space block karega */
+        grid-column: span 2; 
         padding: 12px !important;
         font-size: 14px !important;
     }
 
-    /* SVGs overlapping boundaries prevention */
+
     .footer-main .djks,
     .footer-gefdo {
         display: none !important;
@@ -1372,28 +1369,22 @@
     .nav-links {
         display: flex;
         flex-direction: column;
-        /* Align items to the start (left side) */
         align-items: flex-start; 
         width: 100%;
-        padding-left: 20px; /* Gives it a clean indentation from the edge */
+        padding-left: 20px; 
     }
 
     .nav-links li {
-        width: auto; /* Changed from 100% so the hit-box fits the text, or keep 100% if you want full-width clickable rows */
-        margin-bottom: 15px; /* Alternative way to handle spacing between items */
+        width: auto; 
+        margin-bottom: 15px; 
     }
 }
 @media (max-width: 1199px) {
     .nav-links-mn.active {
         display: flex;
         flex-direction: column;
-        /* Change justify-content from space-between to flex-start */
         justify-content: flex-start; 
-        
-        /* Add a reasonable gap between the items instead of letting them stretch */
-        gap: 20px; 
-        
-        /* Ensure there's decent padding at the top */
+        gap: 20px;
         padding-top: 60px; 
         padding-bottom: 20px;
     }
@@ -1402,14 +1393,14 @@
 
 
 /*======================================================*/
-/* Sirf iPad Pro ke dono modes par horizontal side-by-side alignment ke liye */
+
 @media (min-width: 1024px) and (max-width: 1366px) {
     
-    /* Bootstrap row ke standard behavioral behavior ko break karke flex row force karega */
+    
     .row-nine {
         display: flex !important;
-        flex-direction: row !important; /* Ek ke neeche ek aane se rokega */
-        flex-wrap: nowrap !important;   /* Zabardasti ek hi line me rakhega */
+        flex-direction: row !important; 
+        flex-wrap: nowrap !important;  
         align-items: flex-start !important;
         justify-content: space-between !important;
         width: 100% !important;
@@ -1435,7 +1426,6 @@
         flex: 0 0 55% !important;
     }
 
-    /* Heading text handling so it looks good side-by-side */
     .sec-heding.quest {
         font-size: 32px !important;
         line-height: 1.3 !important;
@@ -1475,20 +1465,20 @@
     
 /*--------------------------------------------*/
 @media (min-width:768px) and (max-width:1024px){
-    /* 2. Overlay ko absolute hi rakhein aur full stretch karein */
+  
   .video-overlay-content {
-    position: absolute; /* Absolute se video aur overlay dono same box mein rahenge */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Puri video screen ko cover karega */
+    height: 100%; 
     z-index: 2; 
     padding: 20px; 
     display: flex !important;
     flex-direction: column;
-    justify-content: center; /* Text aur buttons vertical center ho jayenge */
+    justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.65); /* Thoda aur dark taki text clear dikhe */
+    background: rgba(0, 0, 0, 0.65); 
     box-sizing: border-box;
   }
   
@@ -1498,11 +1488,10 @@
     text-align: center;
   }
   
-  /* 3. Text & Typography for Mobile */
   .text-overlay p {
-    font-size: 15px !important; /* Thoda readable size */
+    font-size: 15px !important; 
     color: #ffffff;
-    margin: -26px -114px 34px -100px  !important; /* Top 0, Bottom sirf 5px space */
+    margin: -26px -114px 34px -100px  !important; 
     line-height: 1.2;
     padding-top: 0PX;
   }
@@ -1511,8 +1500,8 @@
   .text-overlay .book-btn, 
   .text-overlay a.btn { 
     display: inline-block;
-    width: 190%; /* Mobile screen par perfect fit hoga */
-    max-width: 280px; /* Boht zyada wide hone se rokega */
+    width: 190%; 
+    max-width: 280px;
     margin: 9px -56PX;
     padding: 11px;
     box-sizing: border-box;
@@ -1520,11 +1509,11 @@
   }
   #video-container {
     height: auto !important; 
-    min-height: 80vh; /* Puri mobile screen cover karega */
+    min-height: 80vh; 
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Content ko vertically center rakhega */
+    justify-content: center; 
     overflow: hidden;
   }
 
@@ -1534,7 +1523,7 @@
     left: 0;
     width: 100%;
     height: 98%;
-    object-fit: cover; /* Video background ko fetch karke stretch karega */
+    object-fit: cover; 
     z-index: 1;
     transform: none;
   }
