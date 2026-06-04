@@ -600,7 +600,7 @@ a.button.generate-btn::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 0px 80px;
   background: #131313;
   
 }
@@ -716,7 +716,7 @@ body {
 }
 
 .section-two {
-    padding: 100px 0;
+    
     overflow: hidden;
 }
 .sec-heding {
@@ -3916,7 +3916,7 @@ html, body {
 .hero1-banner1 {
   background: linear-gradient(to right, #f8f4ff, #ffffff);
   border-bottom: 2px solid #00e5ff;
-  padding: 127px 10%;
+  padding: 55px 10%;
 }
 
 .hero1-container1 {
@@ -4013,9 +4013,10 @@ html, body {
 
 
 .breadcrumb {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   color: #888;
-  
+  gap:4px;
+
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -4078,6 +4079,8 @@ html, body {
 .sidebar-box2s ul {
     list-style: none;
     padding: 0;
+    text-align:center;
+
 }
 
 .sidebar-box2s li {
@@ -5417,6 +5420,7 @@ html, body {
   font-weight: 800;
   letter-spacing: 4px;
   margin: 0;
+
   text-transform: uppercase;
 }
 
@@ -5649,9 +5653,47 @@ html, body {
     height: 35px !important;
   }
 }
+/*===============================filmmaker=========================*/
+.cine-course-text{
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.7;
+    margin-top:110px;
+}
 
+.cine-course-btn{
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(90deg,#00d4ff,#7b61ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
 
+.cine-course-btn:hover{
+    transform: translateY(-3px);
+}
 
+.cine-course-info{
+    position: relative;
+    z-index: 1000;
+}
+
+.cine-course-btn{
+    display: inline-block;
+    position: relative;
+    z-index: 1001;
+    pointer-events: auto;
+}
+
+.dark-shading-layer{
+    pointer-events: none;
+}
 
 
 
